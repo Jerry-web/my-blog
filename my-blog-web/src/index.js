@@ -5,14 +5,17 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {createStore,applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
+import {BrowserRouter} from 'react-router-dom';
 import {Provider} from 'react-redux';
-import {counter} from './redux/index.redux'
+import {counter} from './redux/index.redux';
 
 const store=createStore(counter,applyMiddleware(thunk))
 
 ReactDOM.render(
     <Provider store={store}>
-        <App/>
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
     </Provider>
 , document.getElementById('root'));
 

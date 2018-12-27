@@ -1,0 +1,22 @@
+
+ .ant-dropdown-menu-item  .anticon{
+    min-width: 12px;
+    margin-right: 8px;
+}
+.header-container .ant-menu-horizontal {
+    height: 64px;
+    line-height: 64px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    border-bottom: none;
+}
+ .ant-layout-header {
+    padding: 0 50px;
+    height: 64px;
+    line-height: 64px;
+}
+ .ant-layout-header {
+    background: #fff;
+}
